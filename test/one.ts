@@ -1,6 +1,6 @@
 import { attest } from "@arktype/attest"
-import { describe, expect } from "vitest"
+import { describe, expect, test } from "vitest"
 
 describe("example", () => {
-  expect(1).toBe(2)
+  test("should fail", () => { expect(1).toBe(2) })
 })
